@@ -23,7 +23,7 @@ public:
                 return list1;
             }
         }
-
+        
         if(list1 -> val <= list2 -> val){
             list3 = curr = list1;
             list1 = list1 -> next;
