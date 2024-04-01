@@ -1,3 +1,8 @@
+#include <string>
+#include <iostream>
+
+using namespace std;
+
 class Solution {
 public:
     bool checkVowel(char c){
@@ -27,3 +32,11 @@ public:
         return tempMax;
     }
 };
+
+void main(){
+    Solution rizz = Solution();
+    int number = rizz.maxVowels("bffriiipasd",3);
+    printf("%d", number);
+}
+
+// https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/
