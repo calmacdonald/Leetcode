@@ -5,6 +5,7 @@
         "xstring": "cpp",
         "initializer_list": "cpp",
         "utility": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xlocale": "cpp"
     }
 }
