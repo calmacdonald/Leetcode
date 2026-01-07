@@ -1,0 +1,20 @@
+class Solution(object):
+    def hardestWorker(self, n, logs):
+        """
+        :type n: int
+        :type logs: List[List[int]]
+        :rtype: int
+        """
+        best_id = best_time = 0
+        start = 0
+
+        for emp_id, end in logs:
+            time = end - start
+
+            if time > best_time or (time == best_time and best_id > emp_id):
+                best_id = emp_id
+                best_time = time
+
+            start = end
+
+        return best_id
